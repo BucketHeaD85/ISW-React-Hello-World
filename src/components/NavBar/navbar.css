@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+}
+
+.logo{
+    width: 10%;
+}
+
+.nav-options{
+    display: flex;
+    justify-content: space-between;
+    background-color: greenyellow;
+}
