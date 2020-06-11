@@ -7,6 +7,7 @@ import Home from './views/Home/Home';
 import Who from './views/WhoWeAre/Who';
 import NavBar from './components/NavBar/navbar';
 import Footer from './components/Footer/footer';
+import Counter from './views/Counter/Counter';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         <Route
           path='/who_we_are'
           component={Who}
+        />
+        <Route
+          path='/counter'
+          component={Counter}
         />
       </Switch>
       <Footer/>

@@ -12,5 +12,9 @@ export default function () {
             name: 'Download',
             path: '/HOLA'
         },
+        {
+            name: 'Counter',
+            path: '/counter'
+        }
     ];
 };
