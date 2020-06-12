@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function FuncCounter(params) {
   // example of how to not do it
-  let count = 0;
+  const [count, setCount] = useState(0);
   
   return(
     <div>
@@ -10,12 +10,12 @@ function FuncCounter(params) {
         {count}
       </div>
       <button
-        onClick={() => count++}
+        onClick={() => setCount(count+1)}
       >
         Aumenta el valor
       </button>
       <button
-        onClick={() => count--}
+        onClick={() => setCount(count-1)}
       >
         Disminuir el valor
       </button>

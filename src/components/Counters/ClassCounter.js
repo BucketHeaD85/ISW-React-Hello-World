@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 
 class ClassCounter extends Component{
 
+  constructor(props){
+    super(props);
+    this.state = {
+      count: 0,
+    }
+  }
+
   render(){
-    // example of how to not do it
-    let count = 0;
+    const count =  this.state.count;
 
     return(
       <div>
@@ -12,12 +18,18 @@ class ClassCounter extends Component{
           {count}
         </div>
         <button
-          onClick={() => count++}
+          onClick={() => this.setState({
+            ...this.state,
+            count: count+1
+          })}
         >
           Aumenta el valor
         </button>
         <button
-          onClick={() => count--}
+          onClick={() => this.setState({
+            ...this.state,
+            count: count-1
+          })}
         >
           Disminuir el valor
         </button>
